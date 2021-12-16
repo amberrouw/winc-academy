@@ -1,36 +1,42 @@
 /*
-const biggerThan = function(checkNumber){
-    const check = checkNumber > 100;
-    return check;
-}
+The function we're going to create will do the following.
 
-console.log(biggerThan(10));
+take two numbers
+each number will be squared (multiplied with itself)
+the squared numbers will be added together
+this sum will be squared again
+the resulting value is returned
 */
-// this function does something
 
-//Brenda the Bouncer Bot
+//function declarations
 
-const BrendaBot = function(maximumNumber, currentNumber, age){
-
-    if (maximumNumber = 800 && currentNumber <= 800 && age >= 18) {
-        sentence = "come in";
-    } else if (maximumNumber = 800 && currentNumber > 800 && age >= 18) {
-        sentence = "It's too busy now, come back later";
-    } else {
-        sentence = "This club is for adults";
-    }
-    return sentence;
+function sum1(number1, number2) {
+    const num1 = number1 * number1;
+    const num2 = number2 * number2;
+    const num3 = num1 + num2;
+    return num3 * num3;
 }
 
-console.log(BrendaBot("maxNum", 890, 10));
+console.log(sum1(1, 2));
 
-//this function produce something
+//function expressions
 
-const calculateAverage = function (numbers){
-    average = numbers.reduce((total, n) => total + n) / numbers.length;
-    return average;
-}
+const sum2 = function (number1, number2) {
+    const num1 = number1 * number1;
+    const num2 = number2 * number2;
+    const num3 = num1 + num2;
+    return num3 * num3;
+};
 
-const grades = [5, 7, 9, 8, 7];
+console.log(sum2(1, 2));
 
-console.log(Math.round(calculateAverage(grades)));
+//arrow functions
+
+const sum3 = (number1, number2) => {
+    const num1 = number1 * number1;
+    const num2 = number2 * number2;
+    const num3 = num1 + num2;
+    return num3 * num3;
+};
+
+console.log(sum3(1, 2));
