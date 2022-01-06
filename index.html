@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- hier zet je de code in de head tags -->
-        <title> Eerste HTML pagina </title>
-    </head>
-    <body>
-       <!-- hier zet je de code in de body tags-->
-       <h1>Over mij</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Color Toggle</title>
+</head>
+<body id="bodyTag">
+    <div class="btn-toggle-nav" id="btnToggle"></div>
+    <nav class="nav-toggle" id="menu">
+        <ul>
+            <li class="homecolor">
+                <input type="radio" id="home" name="radiobtn" value="home">
+                <label for="home">Home</label>
+            </li>
+            <li class="greycolor">
+                <input type="radio" id="grey" name="radiobtn" value="grey">
+                <label for="grey">Grey</label>
+            </li>
+            <li class="sandcolor">
+                <input type="radio" id="sand" name="radiobtn" value="sand">
+                <label for="sand">Sand</label>
+            </li>
+            <li class="bluecolor">
+                <input type="radio" id="blue" name="radiobtn" value="blue">
+                <label for="Blue">Blue</label>
+            </li>
+        </ul>
+    </nav>
+    <div id="text"></div>
 
-       <hr>
-
-       <p>Ik ben Amber Rouw. Altijd in om wat nieuws te leren en een passie voor fotografie.</p>
-
-       <h2>Waarom web development?</h2>
-
-       <hr>
-
-       <p>Ik wil mijn graag ontwikkelen in nieuwe dingen. Ook hou ik van controle, ik zou graag mijn eigen website voor mijn fotografie willen ontwikkelen</p>
-
-    </body>
+</body>
 </html>
